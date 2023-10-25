@@ -1,0 +1,7 @@
+    RewriteEngine on
+
+    #Agar so`ralayotgan fayl yoki katalogiy bor bo`lsa unga to`g`ridan to`g`ri murojat qilamiz
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    # Agar yo`q bo`lsa index.php ga o`tqazib yuboramiz.
+    RewriteRule . index.php 
