@@ -10,6 +10,7 @@ return [
     'id' => 'api-backend',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'api\controllers',
+    //salom
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
