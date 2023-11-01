@@ -7,17 +7,15 @@ $params = array_merge(
 );
 
 return [
-    'id' => 'api-backend',
+    'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
-    'controllerNamespace' => 'api\controllers',
+    'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
         'request' => [
+            'baseUrl' => '/admn',
             'csrfParam' => '_csrf-backend',
-                'parsers' => [
-                    'application/json' => 'yii\web\JsonParser',
-                ]
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -43,10 +41,8 @@ return [
 
         'urlManager' => [
             'enablePrettyUrl' => true,
-            'enableStrictParsing' => true,
             'showScriptName' => false,
             'rules' => [
-                ['class' => 'yii\rest\UrlRule', 'controller' => 'user'],
             ],
         ],
 
