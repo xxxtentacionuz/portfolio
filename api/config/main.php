@@ -10,13 +10,11 @@ return [
     'id' => 'api-backend',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'api\controllers',
-    //salom
     'bootstrap' => ['log'],
-    'modules' => [],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
-                'parsers' => [
+            'parsers' => [
                     'application/json' => 'yii\web\JsonParser',
                 ]
         ],
@@ -47,10 +45,15 @@ return [
             'enableStrictParsing' => true,
             'showScriptName' => false,
             'rules' => [
-                ['class' => 'yii\rest\UrlRule', 'controller' => 'user'],
+                [
+                    'class' => 'yii\rest\UrlRule',
+                    'controller' => [
+                            'user',
+                            'category',
+                        ]
+                 ],
             ],
-        ],
-
+        ]
     ],
     'params' => $params,
 ];
