@@ -13,7 +13,7 @@ return [
     'bootstrap' => ['log'],
     'components' => [
         'request' => [
-//          'baseUrl' => '/api',
+          'baseUrl' => '/api',
             'csrfParam' => '_csrf-backend',
             'parsers' => [
                     'application/json' => 'yii\web\JsonParser',
