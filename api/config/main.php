@@ -10,24 +10,14 @@ return [
     'id' => 'api-backend',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'api\controllers',
-<<<<<<< HEAD
-
-=======
->>>>>>> refs/remotes/origin/master
     'bootstrap' => ['log'],
     'components' => [
         'request' => [
-            'baseUrl' => '/api',
+          'baseUrl' => '/api',
             'csrfParam' => '_csrf-backend',
-<<<<<<< HEAD
-'parsers' => [
-        'application/json' => 'yii\web\JsonParser',
-    ]
-=======
             'parsers' => [
                     'application/json' => 'yii\web\JsonParser',
                 ]
->>>>>>> refs/remotes/origin/master
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -52,16 +42,6 @@ return [
         ],
 
         'urlManager' => [
-<<<<<<< HEAD
-    'enablePrettyUrl' => true,
-    'enableStrictParsing' => true,
-    'showScriptName' => false,
-    'rules' => [
-        ['class' => 'yii\rest\UrlRule', 'controller' => 'user'],
-    ],
-]
-
-=======
             'enablePrettyUrl' => true,
             'enableStrictParsing' => true,
             'showScriptName' => false,
@@ -75,7 +55,6 @@ return [
                  ],
             ],
         ]
->>>>>>> refs/remotes/origin/master
     ],
     'params' => $params,
 ];
