@@ -51,6 +51,7 @@ return [
                     'controller' => [
                             'user',
                             'category',
+                            'news',
                         ]
                  ],
             ],
