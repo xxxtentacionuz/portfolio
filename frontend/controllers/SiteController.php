@@ -2,6 +2,12 @@
 
 namespace frontend\controllers;
 
+use common\models\Aboutme;
+use common\models\Contactme;
+use common\models\Features;
+use common\models\Header;
+use common\models\Price;
+use common\models\Project;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
@@ -75,7 +81,23 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $aboutme = Aboutme::find()->one();
+        $contactme = Contactme::find()->one();
+        $features = Features::find()->all();
+        $header = Header::find()->one();
+        $price = Price::find()->all();
+        $project = Project::find()->one();
+
+        return $this->render('index',
+        [
+            'aboutme' => $aboutme,
+            'contactme' => $contactme,
+            'features' => $features,
+            'header' => $header,
+            'price' => $price,
+            'project' => $project
+        ]
+        );
     }
 
     /**
