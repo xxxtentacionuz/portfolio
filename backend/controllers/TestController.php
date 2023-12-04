@@ -20,7 +20,7 @@ class TestController extends Controller
     {
             $servername = "localhost";
             $username = "root";
-            $password = "yangiparol";
+            $password = "q2.aH5u$8K/Wy*N";
 
             // Create connection
             $conn = new mysqli($servername, $username, $password);
