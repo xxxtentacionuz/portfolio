@@ -84,8 +84,8 @@
 <!-- pricing section -->
 <section class="section" id="pricing">
     <div class="container text-center">
-        <p class="section-subtitle">Sizga qaysi kerak ?</p>
-        <h6 class="section-title mb-6">Narxlari</h6>
+        <p class="section-subtitle">nimalarni bilaman ?</p>
+
         <!-- row -->
         <?php foreach ($price as $pric):  ?>
         <div class="pricing-wrapper">

@@ -30,7 +30,7 @@ class Aboutme extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'lastname'], 'required'],
-            [['name', 'lastname', 'image'], 'string', 'max' => 255],
+            [['name', 'lastname', 'image'], 'string', 'max' => 1000],
         ];
     }
 
