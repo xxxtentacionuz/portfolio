@@ -85,7 +85,7 @@
 <section class="section" id="pricing">
     <div class="container text-center">
         <p class="section-subtitle">nimalarni bilaman ?</p>
-
+        <h6 class="section-title mb-6">Resume</h6>
         <!-- row -->
         <?php foreach ($price as $pric):  ?>
         <div class="pricing-wrapper">
